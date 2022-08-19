@@ -39,9 +39,9 @@
                 <h1 class="display-4">Meet Our Instructors</h1>
             </div>
             <div class="owl-carousel team-carousel position-relative" style="padding: 0 30px;">
-								<?php if (have_rows('instructor' ,'options')): ?>
-										<?php while( have_rows('instructor', 'options') ) : the_row();                   
-										$img_url = get_sub_field('img2')['url'];
+                <?php if (have_rows('instructor' ,'options')): ?>
+                    <?php while( have_rows('instructor', 'options') ) : the_row();                   
+                    $img_url = get_sub_field('img2')['url'];
                 ?>
                 <div class="team-item">
                     <img class="img-fluid w-100" src="<?php echo $img_url; ?>" alt="">
@@ -57,8 +57,8 @@
                         </div>
                     </div>
                 </div>
-								<?php endwhile ?>
-								 <?php endif ?>
+                    <?php endwhile ?>
+                        <?php endif ?>
 				  </div>
 			</div>	
 		</div>

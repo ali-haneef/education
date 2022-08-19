@@ -53,10 +53,10 @@
 
                     <h2 class="mb-3">Related Courses</h2>
                     <div class="owl-carousel related-carousel position-relative" style="padding: 0 30px;">
-										<?php if (have_rows('test' ,'options')): ?>
-											<?php while( have_rows('test', 'options') ) : the_row();                   
-											$img_url = get_sub_field('image')['url'];
-									    ?>
+                        <?php if (have_rows('test' ,'options')): ?>
+                            <?php while( have_rows('test', 'options') ) : the_row();                   
+                            $img_url = get_sub_field('image')['url'];
+                        ?>
                         <a class="courses-list-item position-relative d-block overflow-hidden mb-2" href="detail.html">
                             <img class="img-fluid" src="<?php echo $img_url; ?>" alt="">
                             <div class="courses-text">
@@ -70,7 +70,7 @@
                             </div>
                         </a>
                         <?php endwhile; ?>
-												<?php endif; ?>
+						<?php endif; ?>
                     </div>
                </div>
 

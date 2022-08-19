@@ -68,11 +68,12 @@
                 </div>
                 <div class="col-lg-7">
                     <div class="section-title position-relative mb-4">
-										<?php if (have_rows('contact' ,'options')): the_row(); ?>
+						<?php if (have_rows('contact' ,'options')): the_row(); ?>
                         <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2"><?php echo get_sub_field('icon'); ?></h6>
-                        <h1 class="display-4"><?php echo get_sub_field('icon'); ?></h1>
-												<?php endif; ?>
-												<?php echo do_shortcode('[contact-form-7 id="103" title="my form"]'); ?>
+                        <h1 class="display-4">
+                        <?php echo get_sub_field('icon'); ?></h1>
+                        <?php endif; ?>
+                        <?php echo do_shortcode('[contact-form-7 id="103" title="my form"]'); ?>
                     </div>
                 </div>
             </div>

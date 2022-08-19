@@ -37,35 +37,35 @@
             <div class="row align-items-center">
                 <div class="col-lg-5 mb-5 mb-lg-0">
                     <div class="section-title position-relative mb-4">
-										<?php if (have_rows('name1' ,'options')): ?>
-										<?php while( have_rows('name1', 'options') ) : the_row(); ?>
+                        <?php if (have_rows('name1' ,'options')): ?>
+                        <?php while( have_rows('name1', 'options') ) : the_row(); ?>
                         <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2"><?php echo get_sub_field('namee'); ?></h6>
                         <h1 class="display-4"><?php echo get_sub_field('heading'); ?></h1>
                     </div>
                     <p class="m-0"><?php echo get_sub_field('paragraph'); ?></p>
-										<?php endwhile ?>
-										 <?php endif ?>
+                    <?php endwhile ?>
+                        <?php endif ?>
                 </div>
                 <div class="col-lg-7">
 									
                     <div class="owl-carousel testimonial-carousel">
-										<?php if (have_rows('carousel' ,'options')): ?>
-											<?php while( have_rows('carousel', 'options') ) : the_row();                   
-											$img_url = get_sub_field('image')['url'];
-									     ?>
+                        <?php if (have_rows('carousel' ,'options')): ?>
+                            <?php while( have_rows('carousel', 'options') ) : the_row();                   
+                            $img_url = get_sub_field('image')['url'];
+                            ?>
                         <div class="bg-white p-5">
                             <i class="fa <?php echo get_sub_field('icon'); ?> text-primary mb-4"></i>
                             <p><?php echo get_sub_field('paragraph'); ?></p>
                             <div class="d-flex flex-shrink-0 align-items-center mt-4">
                                 <img class="img-fluid mr-4" src="<?php echo $img_url; ?>" alt="">
                                 <div>
-																	<h5><?php echo get_sub_field('h1'); ?></h5>
-																	<span><?php echo get_sub_field('h2'); ?></span>
+                                    <h5><?php echo get_sub_field('h1'); ?></h5>
+                                    <span><?php echo get_sub_field('h2'); ?></span>
                                 </div>
                             </div>
                         </div>
-												<?php endwhile ?>
-										 <?php endif ?>
+                        <?php endwhile ?>
+                            <?php endif ?>
                     </div>										
                 </div>
             </div>
